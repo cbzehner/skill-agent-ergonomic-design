@@ -1,0 +1,11 @@
+{
+  "name": "agent-ergonomic-design",
+  "description": "Design CLIs, APIs, and tools optimized for AI agent consumption.",
+  "version": "1.0.0",
+  "author": {
+    "name": "cbzehner",
+    "email": "chris@cbzehner.com"
+  },
+  "repository": "https://github.com/cbzehner/skill-agent-ergonomic-design",
+  "license": "MIT"
+}
