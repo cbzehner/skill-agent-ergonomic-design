@@ -5,6 +5,7 @@ description: Design CLIs, APIs, and tools optimized for AI agent consumption. Us
   MCP tools, or when the user mentions "agent-friendly", "machine-readable output",
   "robot mode", or wants to make a tool work well with AI coding agents.
 license: MIT
+effort: medium
 allowed-tools: Read Write Edit Bash Grep Glob
 metadata:
   based-on: "AXI (Agent eXperience Interface) by Kun Chen"
