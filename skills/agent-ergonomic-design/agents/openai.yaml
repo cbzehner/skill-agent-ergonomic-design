@@ -1,4 +1,4 @@
 interface:
   display_name: "Agent Ergonomics"
-  short_description: "Design tools and interfaces for reliable agent use"
-  default_prompt: "Use $agent-ergonomic-design to make this CLI, API, or tool more reliable for agent workflows."
+  short_description: "Design AXI/TOON interfaces for reliable agent use"
+  default_prompt: "Use $agent-ergonomic-design to make this CLI, API, or tool easier for agents to parse, recover from, and operate."
