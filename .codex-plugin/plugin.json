@@ -1,0 +1,31 @@
+{
+  "name": "agent-ergonomic-design",
+  "version": "1.0.0",
+  "description": "Design CLIs, APIs, and tools optimized for AI agent consumption. Use when building tools that agents will call, adding robot/machine mode to CLIs, designing MCP tools, retrofitting an existing CLI for agent use, or when the user mentions \"agent-friendly\", \"machine-readable output\", \"robot mode\", \"AXI\", \"TOON\", or wants to make a tool work well with AI coding agents.",
+  "author": {
+    "name": "cbzehner",
+    "url": "https://github.com/cbzehner"
+  },
+  "homepage": "https://github.com/cbzehner/skill-agent-ergonomic-design",
+  "repository": "https://github.com/cbzehner/skill-agent-ergonomic-design",
+  "license": "MIT",
+  "keywords": [
+    "agent-ergonomic-design",
+    "agent",
+    "ergonomic",
+    "design",
+    "agent-skill"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Agent Ergonomic Design",
+    "shortDescription": "Design CLIs, APIs, and tools optimized for AI agent consumption. Use when building tools that agents will call, addin...",
+    "longDescription": "Design CLIs, APIs, and tools optimized for AI agent consumption. Use when building tools that agents will call, adding robot/machine mode to CLIs, designing MCP tools, retrofitting an existing CLI for agent use, or when the user mentions \"agent-friendly\", \"machine-readable output\", \"robot mode\", \"AXI\", \"TOON\", or wants to make a tool work well with AI coding agents.",
+    "developerName": "cbzehner",
+    "category": "Productivity",
+    "capabilities": [
+      "Productivity"
+    ],
+    "websiteURL": "https://github.com/cbzehner/skill-agent-ergonomic-design"
+  }
+}
