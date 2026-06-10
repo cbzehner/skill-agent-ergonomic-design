@@ -1,0 +1,38 @@
+probes:
+  # --- should trigger: new CLI built primarily for an AI agent consumer ---
+  - prompt: "I'm building a little CLI called specctl for managing the spec files in ~/Developer/Personal/specs. Claude Code will be the main thing running it, not me — how should I structure the output so it doesn't chew through the context window?"
+    expected_skills: ["agent-ergonomic-design"]
+  # --- should trigger: retrofit existing CLI (interactive prompts, huge help) for agent driving ---
+  - prompt: "Our internal dply tool dumps a 4000-line help screen and asks y/n confirmation questions mid-run. I need Claude to drive it in CI without it ever hanging waiting for input. Can you rework the interface?"
+    expected_skills: ["agent-ergonomic-design"]
+  # --- should trigger: empty states / ambiguous output causing agent retries ---
+  - prompt: "When `tasks list --state closed` comes back with nothing, my coding agent keeps re-running it with different flags like it thinks the command failed. Fix the CLI so empty results and errors stop confusing it."
+    expected_skills: ["agent-ergonomic-design"]
+  # --- should trigger: session-start ambient context / dashboard hooks ---
+  - prompt: "I want my notes CLI to print a compact status summary at the start of every Claude Code session so the model already knows what's in flight before I type anything. How do I wire that up?"
+    expected_skills: ["agent-ergonomic-design"]
+  # --- should trigger: MCP server tool response design for an LLM consumer ---
+  - prompt: "Writing an MCP server for our deploy pipeline at work. What should the tool responses look like so Claude can tell a failed deploy from a flaky network call without me stuffing the whole log into the reply?"
+    expected_skills: ["agent-ergonomic-design"]
+  # --- should trigger: exit codes / structured error design for agent branching ---
+  - prompt: "vaultctl exits 1 for literally everything — bad flags, expired auth, rate limits. I'd like Claude to handle each case differently without scraping stderr. What's the right error and exit code design?"
+    expected_skills: ["agent-ergonomic-design"]
+  # --- should trigger: token-thrifty wrapper around a verbose existing tool ---
+  - prompt: "Every time Claude runs `gh issue list` in our monorepo the output eats half the context. I'm thinking of wrapping gh in a thin CLI that only returns the handful of fields that matter — help me design it."
+    expected_skills: ["agent-ergonomic-design"]
+
+  # --- near miss: creating a new Claude Code skill -> create-skill ---
+  - prompt: "Can you turn my weekly changelog routine into a /changelog command for Claude Code? I keep doing the same five steps by hand every Friday."
+    expected_skills: ["create-skill"]
+  # --- near miss: using an agent-oriented browser tool, not designing one -> browser ---
+  - prompt: "Use chrome-devtools-axi to open localhost:3000 and screenshot the dashboard so we can check the nav renders after my CSS change."
+    expected_skills: ["browser"]
+  # --- near miss: debugging broken CLI output -> diagnose ---
+  - prompt: "After yesterday's refactor, mycli --json started emitting garbled UTF-8 on macOS but it's fine on Linux. Figure out what's going on."
+    expected_skills: ["diagnose"]
+  # --- near miss: rewriting CLI docs prose -> humanize ---
+  - prompt: "The README for my tasks CLI reads like a robot wrote it — same stiff intro every section. Can you make it sound like an actual person?"
+    expected_skills: ["humanize"]
+  # --- near miss: scoping a human-facing CLI product -> plan ---
+  - prompt: "I want to build a time-tracking CLI my whole team would use day to day. Not sure yet what commands it needs or who'd actually adopt it — help me nail down the requirements first."
+    expected_skills: ["plan"]
