@@ -1,3 +1,5 @@
+> **Moved:** this skill now lives in [cbzehner/skills](https://github.com/cbzehner/skills) under `skills/agent-ergonomic-design/`. This repo is archived and read-only.
+
 # Agent Ergonomic Design
 
 Design CLIs, APIs, and MCP tools that agents can call without guessing. The skill focuses on machine-readable output, clear failure modes, and interfaces that work well in real agent loops.
